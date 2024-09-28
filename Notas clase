@@ -1,2 +1,55 @@
 # clase 1
 # 4 entregas actividades.
+
+
+# 24/09/2024
+
+Se ajustarán las fechas de las actividades.
+
+- Problemas de regresión y clasificación 
+(modelo de predicción - combinación (fontera lineal) lineal de multiples variables)
+cuando no son lineales se hace necesario usar redes neuronales.
+
+Capa de entrada - capas ocultas - capa de salida
+Cada neurona tiene unos pesos
+
+- Función de activación
+
+- Backward propagation (prueba y feedback) # tetester que tan bien está prediciendo la red.
+sirve para determinar el error y así calibrar la red
+ajustando los pesos para que la predicción sea mejor.
+
+- Regla de la cadena.
+- tasa de aprendizaje (learning rate)
+
+- back propagation (ajuste de pesos)
+
+A medida que las redes neuronales los costos computacionales son más complejos 
+
+######### terminos importantes 
+
+- forward, backward propagation,parámetros,pesos,regla de la cadena, descenso del gradiente.
+
+
+Forward Propagation (Propagación Hacia Adelante): Es el proceso de pasar la entrada a través de la red neuronal para obtener una predicción. 
+En cada capa, se aplican pesos y funciones de activación a los datos, transformando la entrada hasta llegar a la capa de salida.
+
+Backward Propagation (Propagación Hacia Atrás): Es el proceso de ajustar los pesos de la red después de calcular el error entre la predicción y el valor real. 
+Se utiliza para minimizar el error a través de la regla de la cadena, calculando los gradientes y actualizando los pesos en la dirección opuesta al gradiente.
+
+Parámetros: Son las variables que la red neuronal ajusta durante el entrenamiento para aprender a hacer predicciones. Incluyen los pesos y los sesgos 
+que se aplican a las entradas en cada neurona.
+
+Pesos: Son los coeficientes que determinan la influencia de cada entrada en la salida de una neurona. Los pesos son actualizados durante 
+el entrenamiento para mejorar la precisión de las predicciones.
+
+Regla de la Cadena: Es una fórmula en cálculo que permite calcular la derivada de funciones compuestas. 
+En el contexto de redes neuronales, se usa durante la propagación hacia atrás para calcular cómo un cambio en los pesos afecta al error final.
+
+Descenso del Gradiente: Es un algoritmo de optimización utilizado para minimizar la función de pérdida. 
+Consiste en ajustar los pesos en la dirección opuesta al gradiente de la función de pérdida, buscando así los valores óptimos de los
+parámetros que reducen el error de predicción.
+
+
+
+
