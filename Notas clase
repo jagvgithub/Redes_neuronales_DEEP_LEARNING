@@ -50,6 +50,180 @@ Descenso del Gradiente: Es un algoritmo de optimización utilizado para minimiza
 Consiste en ajustar los pesos en la dirección opuesta al gradiente de la función de pérdida, buscando así los valores óptimos de los
 parámetros que reducen el error de predicción.
 
+AND lineal
+XOR no lineal 
+
+
+TIPOS de DESCENSO DEL GRADIENTE
+- stocastic gradient descent: size 1
+- Mini- batch SGD : size >1 < tamaño del training set
+- Batch SGD: batch size == tamaño del trainig set
+
+Stochastic Gradient Descent (SGD): Este método actualiza los pesos utilizando solo un ejemplo (tamaño de lote de 1) en cada iteración. 
+Esto hace que las actualizaciones sean muy rápidas, pero también introduce variabilidad, ya que cada ejemplo puede llevar a una dirección
+diferente en el espacio de parámetros.
+
+Mini-Batch Gradient Descent: En este enfoque, se utiliza un pequeño grupo de ejemplos (batch) para actualizar los pesos. 
+El tamaño del batch es mayor que 1 pero menor que el tamaño total del conjunto de entrenamiento. Esto proporciona un buen 
+equilibrio entre la rapidez del SGD y la estabilidad del Batch Gradient Descent.
+
+Batch Gradient Descent: Aquí, se utilizan todos los ejemplos del conjunto de entrenamiento (batch size igual al tamaño del conjunto de entrenamiento)
+para calcular la actualización de los pesos. Aunque es más estable y proporciona una dirección más precisa para la actualización, puede ser lento 
+y consumir mucha memoria, especialmente con conjuntos de datos grandes.
+
+Descenso del gradiente : OPTIMIZADOR.
+
+############## FUNCIONES DE ACTIVACION #############
+
+- RELU : valor negativo de salida, el valor con la función toma cero
+- SIGMOIDE : acota el rango de salida entre cero y uno
+- SOFTMAX
+- TANH
+
+ReLU (Rectified Linear Unit)
+Definición: La función ReLU es definida como 
+𝑓
+(
+𝑥
+)
+=
+max
+⁡
+(
+0
+,
+𝑥
+)
+f(x)=max(0,x). Esto significa que para cualquier valor de entrada negativo, la salida es cero; para valores positivos, la salida es igual al valor de entrada.
+
+Ventajas:
+
+Computacionalmente eficiente (no requiere operaciones exponenciales).
+Ayuda a mitigar el problema del desvanecimiento del gradiente, permitiendo que los gradientes fluyan más fácilmente.
+Desventajas:
+
+Puede sufrir del problema "dropped neurons", donde ciertas neuronas dejan de activarse completamente (salida siempre cero) durante el entrenamiento.
+No está acotada, lo que puede llevar a salidas muy grandes.
+2. Sigmoide
+Definición: La función sigmoide se define como 
+𝑓
+(
+𝑥
+)
+=
+1
+1
++
+𝑒
+−
+𝑥
+f(x)= 
+1+e 
+−x
+ 
+1
+​
+ . Mapea cualquier valor real a un rango entre 0 y 1.
+
+Ventajas:
+
+Buena para modelar probabilidades y resultados binarios.
+Su salida está acotada, lo que hace que sea fácil interpretar como probabilidad.
+Desventajas:
+
+Puede sufrir del problema del desvanecimiento del gradiente, lo que dificulta el entrenamiento de redes profundas.
+La salida no está centrada en cero, lo que puede causar problemas de convergencia.
+3. Softmax
+Definición: La función Softmax se usa principalmente en la capa de salida de modelos de clasificación multiclase. Convierte un vector de valores reales en probabilidades que suman 1, usando la fórmula 
+𝑓
+(
+𝑥
+𝑖
+)
+=
+𝑒
+𝑥
+𝑖
+∑
+𝑗
+𝑒
+𝑥
+𝑗
+f(x 
+i
+​
+ )= 
+∑ 
+j
+​
+ e 
+x 
+j
+​
+ 
+ 
+e 
+x 
+i
+​
+ 
+ $fdfdfdsfdsf$
+​
+ .
+
+Ventajas:
+
+Ideal para clasificación multiclase, ya que produce probabilidades que son interpretables.
+Ayuda a seleccionar la clase con la mayor probabilidad al final del modelo.
+Desventajas:
+
+Puede ser sensible a valores extremos, lo que puede afectar la estabilidad numérica.
+No es adecuada para problemas que no requieren una salida de probabilidad.
+4. Tanh (Tangente Hiperbólica)
+Definición: La función tanh se define como 
+𝑓
+(
+𝑥
+)
+=
+𝑒
+𝑥
+−
+𝑒
+−
+𝑥
+𝑒
+𝑥
++
+𝑒
+−
+𝑥
+f(x)= 
+e 
+x
+ +e 
+−x
+ 
+e 
+x
+ −e 
+−x
+ 
+​
+ . Mapea cualquier valor real a un rango entre -1 y 1.
+
+Ventajas:
+
+Está centrada en cero, lo que puede acelerar la convergencia.
+Menos susceptible al problema del desvanecimiento del gradiente en comparación con la sigmoide.
+Desventajas:
+
+Aún puede sufrir el problema del desvanecimiento del gradiente para valores extremos.
+La computación puede ser más costosa que ReLU, ya que implica operaciones exponenciales.
+
+
+
+
 
 
 
