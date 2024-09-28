@@ -131,6 +131,18 @@ Desventajas:
 Aún puede sufrir el problema del desvanecimiento del gradiente para valores extremos.
 La computación puede ser más costosa que ReLU, ya que implica operaciones exponenciales.
 
+#### 26/09/2024
+
+URL API
+
+keras2 api documentation
+pytorch
+tensorFlow
+
+# 41 minutos  construcción de la primera red neuronal.
+
+
+
 
 
 
