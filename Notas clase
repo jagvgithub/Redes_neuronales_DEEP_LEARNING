@@ -82,48 +82,21 @@ Descenso del gradiente : OPTIMIZADOR.
 
 ReLU (Rectified Linear Unit)
 Definición: La función ReLU es definida como 
-𝑓
-(
-𝑥
-)
-=
-max
-⁡
-(
-0
-,
-𝑥
-)
-f(x)=max(0,x). Esto significa que para cualquier valor de entrada negativo, la salida es cero; para valores positivos, la salida es igual al valor de entrada.
+Esto significa que para cualquier valor de entrada negativo, la salida es cero; para valores positivos, la salida es igual al valor de entrada.
 
 Ventajas:
 
 Computacionalmente eficiente (no requiere operaciones exponenciales).
 Ayuda a mitigar el problema del desvanecimiento del gradiente, permitiendo que los gradientes fluyan más fácilmente.
+
 Desventajas:
 
 Puede sufrir del problema "dropped neurons", donde ciertas neuronas dejan de activarse completamente (salida siempre cero) durante el entrenamiento.
 No está acotada, lo que puede llevar a salidas muy grandes.
+
 2. Sigmoide
 Definición: La función sigmoide se define como 
-𝑓
-(
-𝑥
-)
-=
-1
-1
-+
-𝑒
-−
-𝑥
-f(x)= 
-1+e 
-−x
- 
-1
-​
- . Mapea cualquier valor real a un rango entre 0 y 1.
+Mapea cualquier valor real a un rango entre 0 y 1.
 
 Ventajas:
 
@@ -135,41 +108,6 @@ Puede sufrir del problema del desvanecimiento del gradiente, lo que dificulta el
 La salida no está centrada en cero, lo que puede causar problemas de convergencia.
 3. Softmax
 Definición: La función Softmax se usa principalmente en la capa de salida de modelos de clasificación multiclase. Convierte un vector de valores reales en probabilidades que suman 1, usando la fórmula 
-𝑓
-(
-𝑥
-𝑖
-)
-=
-𝑒
-𝑥
-𝑖
-∑
-𝑗
-𝑒
-𝑥
-𝑗
-f(x 
-i
-​
- )= 
-∑ 
-j
-​
- e 
-x 
-j
-​
- 
- 
-e 
-x 
-i
-​
- 
- $fdfdfdsfdsf$
-​
- .
 
 Ventajas:
 
@@ -181,35 +119,7 @@ Puede ser sensible a valores extremos, lo que puede afectar la estabilidad numé
 No es adecuada para problemas que no requieren una salida de probabilidad.
 4. Tanh (Tangente Hiperbólica)
 Definición: La función tanh se define como 
-𝑓
-(
-𝑥
-)
-=
-𝑒
-𝑥
-−
-𝑒
-−
-𝑥
-𝑒
-𝑥
-+
-𝑒
-−
-𝑥
-f(x)= 
-e 
-x
- +e 
-−x
- 
-e 
-x
- −e 
-−x
- 
-​
+
  . Mapea cualquier valor real a un rango entre -1 y 1.
 
 Ventajas:
