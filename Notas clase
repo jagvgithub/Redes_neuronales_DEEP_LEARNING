@@ -140,6 +140,12 @@ pytorch
 tensorFlow
 
 # 41 minutos  construcción de la primera red neuronal.
+ Cuando se tienen problemas de clasificación de dos clases se recomienda la activación sigmoide,
+cuando se tiene un problema de clasificación multiclase se recomienda activación softmax
+
+OVerfitting se puede manejar por medio del # de neuronas dentro de cada capa.
+en DEEP LEARNING cuando se manejan millones de datos el test usualmente es el 1%
+
 
 
 
