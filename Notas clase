@@ -148,6 +148,46 @@ en DEEP LEARNING cuando se manejan millones de datos el test usualmente es el 1%
 
 
 
+######################### 01/10/2024 ###################################
+
+Funciones de activación 
+Ejemplo de TEXTO
+Funciones de activación 
+
+SIGMOIDE: se adpata bien a problemas de clasificacion binaria.
+TANGENCIAL : tanh : adecuada cuando hay una clase mayoritaria.
+RELU : es raro ver relu en capas de salida, pero sin en capas intermedias.
+
+REGULARIZACION : técnicas para evitar el sobreajuste.
+LOGITS : valores de salida reales
+PROBITS : valores de salida en probabilidad (haciendo uso de softmax)
+
+tipos de error 
+
+REGRESION : MSE
+CLASSIFICATION multiclase : "categorical crossentrophy"
+CLASIFICACION binaria : "binary cross-entrophy"
+
+multi etiqueta (multi label - multi task)
+
+REGULARIZACION L1,L2 (para evitar el overfitting)
+controlar que la red no memorice las entradas, sino que realmente logre clasificar bien.
+
+DROPOUT : dificultar el aprendixaje de la red para que no memorice 
+determinar si se habilita o se desabilita una neurona (NO aplicar en la capa de salida, si en las capas intermedias)
+BACTH NORMALIZATION : normalizar capa capa entre 0 1
+
+** las capas densas añaden un crecimiento exponencial en el numero de parámetros
+** los valores altos de entrada son un suicidio.
+
+aprendizaje automatico: evita que el criterio experto no tenga que estar en constante monitoreo.
+
+
+## se implementaran otro tipo de capas para tratar de solucionar el crecimiento exponencial de parámetros
+
+
+
+
 
 
 
