@@ -187,6 +187,23 @@ aprendizaje automatico: evita que el criterio experto no tenga que estar en cons
 
 
 
+##################################### 03/10/2024 ########################################################
+
+Procesado digital de imagen != DEEP VISION
+
+Perceptrón multicapa : supone un problema en el crecimiento exponencial de los hiperparámetros.
+
+para evitar lo anterior se hace necesario recurrir a CNN redes neuronales convolucionales. 
+- Dense layer aprenden patrones globales (en toda la imagen)
+- Convoluciones detectan patrones locales (resistente a traslaciones)
+- Convoluciones permiteb aorender jeraquias de patrones (patrones locales, como lineas, curvas,etc, a circulos, rectangulos, a constelaciones)
+
+# 45 minutos
+
+
+
+
+
 
 
 
