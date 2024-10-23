@@ -209,6 +209,20 @@ striding(dar saltos )
 Pooling 
 - reducir dimensionalidad espacial
 - reducir el # de parámetros
+ * lo más habitual es ver poling 2x2
+
+modulos 
+* models
+* layers de tensorfow.keras(Dense,Conv2D)
+
+la funcion summary() nos muestra paso a paso el # de hiperparametros 
+mediante keras.
+
+para evitar el overfitting se debe tener en cuanta el concepto de data augmentation (transformar los datos 
+originales, para que el modelo no memorice los datos de train)
+
+Revisar el estado del arte para no empezar los proyectos de cero (transfer learning)
+
 
 
 
