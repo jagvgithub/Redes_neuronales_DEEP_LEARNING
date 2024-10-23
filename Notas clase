@@ -198,7 +198,17 @@ para evitar lo anterior se hace necesario recurrir a CNN redes neuronales convol
 - Convoluciones detectan patrones locales (resistente a traslaciones)
 - Convoluciones permiteb aorender jeraquias de patrones (patrones locales, como lineas, curvas,etc, a circulos, rectangulos, a constelaciones)
 
-# 45 minutos
+Padding y striding
+
+padding (añadir filas y columnas para hacer posible el análisis)
+
+striding(dar saltos )
+
+# reducción de tamaño
+
+Pooling 
+- reducir dimensionalidad espacial
+- reducir el # de parámetros
 
 
 
