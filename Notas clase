@@ -187,7 +187,7 @@ aprendizaje automatico: evita que el criterio experto no tenga que estar en cons
 
 
 
-##################################### 02/10/2024 ########################################################
+##################################### 03/10/2024 ########################################################
 
 Procesado digital de imagen != DEEP VISION
 
@@ -228,7 +228,35 @@ FINE TUNING
 
 
 
-########################################### 14/10/2024 ##############################################################
+########################################### 15/10/2024 ##############################################################
+
+
+## API dataset actividad a entregar 10/11/2024
+
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("misrakahmed/vegetable-image-dataset")
+
+print("Path to dataset files:", path)
+
+Separacion de dataset en entrenamiento,test y validacion
+
+CONSTRUCCION DE UNA RED CNN
+
+* se divide en 255 para dejar la informacion entre 0 1 (especie de noramlizacion estandar)
+pero el ser imagenes no es posible sacar estadisticas, media y sd.
+
+* arquitectura preceptrón multicapa
+* arquitectura redes CNN
+
+arquitecturas-
+- ad
+- model
+- bloque
+
+
+
 
 
 
