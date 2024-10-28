@@ -250,10 +250,49 @@ pero el ser imagenes no es posible sacar estadisticas, media y sd.
 * arquitectura preceptrón multicapa
 * arquitectura redes CNN
 
+
 arquitecturas-
 - ad
 - model
 - bloque
+
+
+############################ 17 / 10 / 2024 ####################
+
+el CNN presenta mejores reultados al hacer análisis espacial con respecto al perceptrón multicapa.
+
+Dropout
+Data augmentation
+
+labelbinerizer
+imageDataGenerator
+
+callbacks de keras -- mas tipico --- modelCheckpiont (permite ir guardando los paramentros del modelo)
+earlystopping (si el modelo no mejora se deja el ultimo mejor.)
+
+
+################### 1:Transfer Learning    2:FINE TUNING ###########################
+
+1: manetener los mismos pesos (congelar todos los pesos de la red hasta un punto dado (izquierda))
+2: ajustar algunos pesos de la red de una red ya preentrenada. (revisar que los datos con los que se entrenó la red sean
+similares a los del ejercicio de aplicación) catastofing forgetting  (empeorar la red)
+
+keras applications
+VGG16
+
+* implementacion de un modelo ya establecido y ajustar al problema al que se le está buscando la solución 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
