@@ -284,6 +284,41 @@ VGG16
 
 
 
+########## 22 / 10 / 2024 ##############
+
+tareas avanzadas CV (computer vision)
+
+* detección de objetos
+caracteristicas similares basadas en color, tamaño, textura, y forma
+
+1: extracción de regiones candidatas
+2: uso de transfer learnig con rquitecturas pre entrenadas
+3: clasificacion de cada region candidata empleando las características 
+extraidas y support vector machine (SVM)
+
+* varias metodologías
+
+################# Segmentación semántica y de instancia ###############
+
+SEGMENTACION SEMANTICA
+
+este tipo de red recibe como entrada una imagen de un determinado tamaño 
+y como salida devuelve la imagen segmentada del mismo tamaño.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
